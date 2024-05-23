@@ -55,6 +55,10 @@ nav ul li a {
     padding: 50px 20px;
 }
 
+.contact-info {
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
