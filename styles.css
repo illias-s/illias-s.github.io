@@ -11,12 +11,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    font-family: 'Great Vibes', cursive; /* Apply Great Vibes font */
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+}
+
+.ziya {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
 }
 
 nav {
