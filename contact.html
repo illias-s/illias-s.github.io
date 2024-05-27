@@ -19,6 +19,46 @@
             }
         }
     </script>
+	 <style>
+       
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
@@ -46,17 +86,19 @@
             <p>North County Dublin, Ireland</p>
 
             <h2>Contact Details</h2>
-            <p>Phone: <a href="tel:+35385123456">085 123 4567</a></p>
+            <p>Phone: <a href="tel:+35385123456">085 187 0373</a></p>
             <p>Email: <a href="mailto:info@ziyaskinclinic.ie">info@ziyaskinclinic.ie</a></p>
 
             <h2>Opening Hours</h2>
-            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-            <p>Saturday: 10:00 AM - 4:00 PM</p>
-            <p>Sunday: Closed</p>
+            <p>Tuesday, Thursday: 9:00 AM - 6:00 PM </p>
+            <p>Saturday: 10:00 AM - 12:00 PM</p>
+            <p>Monday, Wednesday, Friday, Sunday: Closed</p>
 
             <h2>Get in Touch</h2>
             <p>Fill out the form below to send us a message, and we'll get back to you as soon as possible.</p>
             <div class="contact-form">
+    
+
     <h2>Contact Us</h2>
     <form action="https://formspree.io/f/mpzvekvr" method="POST">
         <div class="form-group">
@@ -68,12 +110,17 @@
             <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
             <label for="description">Description:</label>
             <textarea id="description" name="description" required></textarea>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
     </form>
 </div>
+
         </section>
     </main>
 
