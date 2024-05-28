@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: seaside display regular;
     margin: 0;
     padding: 0;
 }
@@ -14,13 +14,13 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .ziya {
     font-family: 'Great Vibes', cursive;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 nav {
@@ -57,19 +57,30 @@ nav ul li a {
     background-color: #E3C6C4;
     color: #333;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 
 .content, .about-info, .contact-info {
     background-color: #fff;
-    color: #333;
     padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
 }
 
-.about-info h1, .about-info h2, .about-info h3, .contact-info h1, .contact-info h2 {
-    color: #B64044;
+.content-section {
+    margin-bottom: 20px;
+}
+
+ h2, h3, h4, h5, h6 {
+    background-color: #f0f0f0; /* Light grey background color for headings */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #B64044;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
