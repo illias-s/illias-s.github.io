@@ -36,7 +36,7 @@ nav {
 
 .menu-toggle {
     display: none;
-    background-color: #A65976;
+    background-color: #B64044;
     color: white;
     border: none;
     padding: 10px;
@@ -100,6 +100,7 @@ h2, h3, h4, h5, h6 {
     border-radius: 5px;
     font-family: Arial, sans-serif;
     font-size: 15px;	
+	display: inline-block;
 }
 
 footer {
@@ -118,7 +119,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #A65976;
+        background-color: #B64044;
         position: absolute;
         top: 50px;
         right: 20px;
