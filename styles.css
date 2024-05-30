@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 3px;
+    padding: 10px 3px;
     position: fixed; /* Fixed position */
     top: 0; /* Stick to the top */
     width: 100%; /* Full width */
@@ -61,10 +61,9 @@ nav ul li a {
 }
 
 .hero {
-    /*background-color: #E3C6C4;*/
-	background-image: 'file:///C:/Downloads/Ziya%20skin%20clinic%20workshop/site/image/background2.jpg';
-	/*background-image: url('/image/background2jpg');*/
-	background-size: contain; /* Fit the image inside the element */
+    /*background-color: #E3C6C4;*/	
+	background-image: url('/image/background2jpg');
+	background-size: cover; /* Fit the image inside the element */
    /* background-size: cover; *//* Ensure the background covers the entire area */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background from repeating */
@@ -92,6 +91,7 @@ h2, h3, h4, h5, h6 {
     border-radius: 5px;
     font-family: Arial, sans-serif;
     font-size: 15px;
+	background-size: cover;
 }
 
 footer {
