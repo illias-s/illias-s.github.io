@@ -73,6 +73,8 @@ nav ul li a {
     background-color: #f0f0f0; /* Light grey background color for headings */
     padding: 10px;
     border-radius: 5px;
+	font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
 footer {

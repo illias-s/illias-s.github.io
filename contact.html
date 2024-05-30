@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +17,16 @@
                 menu.style.display = 'block';
             }
         }
+
+        function clearForm() {
+            document.getElementById('contact-form').reset();
+        }
+
+        window.onload = function() {
+            clearForm();
+        }
     </script>
-	 <style>
-       
+    <style>
         .contact-form {
             background-color: white;
             padding: 20px;
@@ -47,7 +53,7 @@
             resize: vertical;
             height: 100px;
         }
-        .submit-btn {
+        .submit-btn, .clear-btn {
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -55,15 +61,14 @@
             cursor: pointer;
             border-radius: 4px;
         }
-        .submit-btn:hover {
+        .submit-btn:hover, .clear-btn:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo"><span class="ziya">Ziya</span> Skin Clinic</div>
+        <div class="logo"><span class="ziya">Ziya</span>&nbsp;&nbsp;Skin Clinic</div>
         <nav>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul id="menu">
@@ -85,9 +90,9 @@
             <p>Ballykea, Skerries</p>
             <p>North County Dublin, Ireland</p>
 
-			 <h2>Find Us</h2>
-             <p><a target="_blank" href="https://maps.app.goo.gl/RDNVaer1oKAJbtYJ7">Map Location</a></p>
-			
+            <h2>Find Us</h2>
+            <p><a target="_blank" href="https://maps.app.goo.gl/RDNVaer1oKAJbtYJ7">Map Location</a></p>
+
             <h2>Contact Details</h2>
             <p>Phone: <a href="tel:+35385123456">085 187 0373</a></p>
             <p>Email: <a href="mailto:info@ziyaskinclinic.ie">info@ziyaskinclinic.ie</a></p>
@@ -100,33 +105,31 @@
             <h2>Get in Touch</h2>
             <p>Fill out the form below to send us a message, and we'll get back to you as soon as possible.</p>
             <div class="contact-form">
-    
-
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mpzvekvr" method="POST">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone No:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
-</div>
-
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="https://formspree.io/f/mpzvekvr" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone No:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" class="clear-btn" onclick="clearForm()">Clear</button>
+                </form>
+            </div>
         </section>
     </main>
-<footer>
+    <footer>
         <p>&copy; 2024 Ziya Skin Clinic. All rights reserved.</p>
     </footer>
 </body>
