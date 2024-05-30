@@ -4,6 +4,18 @@ body {
     padding: 0;
 }
 
+body {
+    font-family: seaside display regular;
+    margin: 0;
+    padding: 0;
+    background-image: url('/image/background.jpg');
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Make sure the background scrolls with the page */
+}
+
+
 header {
     background-color: #B64044;
     color: white;
@@ -11,6 +23,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it is on top of other elements */
 }
 
 .logo {
@@ -58,22 +74,24 @@ nav ul li a {
     color: #333;
     text-align: center;
     padding: 10px 20px;
+    margin-top: 70px; /* Add margin to offset the fixed header */
 }
 
-.content, .about-info, .contact-info {
+.content, .about-info, .contact-info,.pricing-info  {
     background-color: #fff;
     padding: 20px;
+    margin-top: 70px; /* Add margin to offset the fixed header */
 }
 
 .content-section {
     margin-bottom: 20px;
 }
 
- h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     background-color: #f0f0f0; /* Light grey background color for headings */
     padding: 10px;
     border-radius: 5px;
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 15px;
 }
 
