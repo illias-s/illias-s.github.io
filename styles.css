@@ -21,6 +21,7 @@ header {
 .logo {
     font-size: 20px;
     font-weight: bold;
+	font-family: 'Romerio';
 }
 
 .ziya {
@@ -60,7 +61,8 @@ nav ul li a {
 
 .hero {
     /*background-color: #E3C6C4;*/
-	 background-image: url('/image/background2jpg');
+	background-image: 'file:///C:/Downloads/Ziya%20skin%20clinic%20workshop/site/image/background2.jpg';
+	/*background-image: url('/image/background2jpg');*/
 	background-size: contain; /* Fit the image inside the element */
    /* background-size: cover; *//* Ensure the background covers the entire area */
     background-position: center; /* Center the background image */
@@ -73,7 +75,7 @@ nav ul li a {
 }
 
 .content, .about-info, .contact-info,.pricing-info  {
-    background-color: #fff;
+   /* background-color: #fff;*/
     padding: 20px;
     margin-top: 70px; /* Add margin to offset the fixed header */
 }
