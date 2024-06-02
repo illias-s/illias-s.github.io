@@ -21,7 +21,7 @@
     <url>
         <loc>https://www.ziyaskinclinic.ie/pricing</loc>
         <lastmod>2024-05-30</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
@@ -37,24 +37,10 @@
     <url>
         <loc>https://www.ziyaskinclinic.ie/contact</loc>
         <lastmod>2024-05-30</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 
-    <!-- Blog Page -->
-    <url>
-        <loc>https://www.ziyaskinclinic.ie/blog</loc>
-        <lastmod>2024-05-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
 
-    <!-- Example Blog Post -->
-    <url>
-        <loc>https://www.ziyaskinclinic.ie/blog/benefits-of-facials</loc>
-        <lastmod>2024-05-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
 
 </urlset>
