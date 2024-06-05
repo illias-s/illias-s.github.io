@@ -62,7 +62,7 @@ nav ul li a {
 
 .hero {
     /*background-color: #E3C6C4;*/	
-	background-image: url('/image/background2jpg');
+	background-image: url('/image/background.avif');
 	background-size: cover; /* Fit the image inside the element */
    /* background-size: cover; *//* Ensure the background covers the entire area */
     background-position: center; /* Center the background image */
