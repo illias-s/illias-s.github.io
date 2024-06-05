@@ -3,7 +3,7 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://www.ziyaskinclinic.ie</loc>
+        <loc>https://ziyaskinclinic.ie</loc>
         <lastmod>2024-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
     <!-- About Page -->
     <url>
-        <loc>https://www.ziyaskinclinic.ie/about</loc>
+        <loc>https://ziyaskinclinic.ie/about</loc>
         <lastmod>2024-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -19,14 +19,14 @@
 
     <!-- Services Page -->
     <url>
-        <loc>https://www.ziyaskinclinic.ie/pricing</loc>
+        <loc>https://ziyaskinclinic.ie/pricing</loc>
         <lastmod>2024-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
    <url>
-        <loc>https://www.ziyaskinclinic.ie/index</loc>
+        <loc>https://ziyaskinclinic.ie/index</loc>
         <lastmod>2024-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -34,7 +34,7 @@
 	
     <!-- Contact Page -->
     <url>
-        <loc>https://www.ziyaskinclinic.ie/contact</loc>
+        <loc>https://ziyaskinclinic.ie/contact</loc>
         <lastmod>2024-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
