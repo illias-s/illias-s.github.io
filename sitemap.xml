@@ -9,14 +9,6 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- About Page -->
-    <url>
-        <loc>https://ziyaskinclinic.ie/about.html</loc>
-        <lastmod>2024-07-03</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
     <!-- Services Page -->
     <url>
         <loc>https://ziyaskinclinic.ie/pricing.html</loc>
