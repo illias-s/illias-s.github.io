@@ -4,7 +4,7 @@ Disallow: /wp-includes/
 Disallow: /cgi-bin/
 Disallow: /private/
 Disallow: /tmp/
-Disallow: /About.html
+Disallow: /about.html
 
 # Allow all robots to visit the website
 User-agent: *
