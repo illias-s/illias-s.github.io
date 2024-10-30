@@ -5,12 +5,6 @@ Disallow: /cgi-bin/
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /about.html
-
-# Allow all robots to visit the website
-User-agent: *
-Allow: /
-
-# Disallow specific files
 Disallow: /privacy-policy/
 Disallow: /terms-of-service/
 
