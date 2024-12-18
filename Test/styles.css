@@ -113,16 +113,7 @@ footer {
             font-weight: bold;
         }
 
-        /* Mobile Menu Button */
-        .menu-toggle {
-            display: none;
-            background-color: #A65976;
-            color: #fff;
-            border: none;
-            font-size: 24px;
-            padding: 10px;
-            cursor: pointer;
-        }
+      
 
         /* Desktop Menu (Horizontal) */
         nav ul {
@@ -147,30 +138,45 @@ footer {
             border-radius: 5px;
         }
 
+        /* Mobile Menu Button (☰) */
+        .menu-toggle {
+            display: none;
+            background-color: #A65976;
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
         /* Mobile Menu Styles */
         @media (max-width: 768px) {
             .menu-toggle {
-                display: block;
+                display: block; 
             }
 
             nav ul {
-                display: flex; /*: 0 0 auto; */
+                display: flex; 
                 flex-direction: column; 
                 width: 150px; 
                 background-color: #B64044; 
                 position: fixed; 
-                top: 80px; 
-                right: -150px; /* Off-screen to the right */
-                /*height: 100%; */
-                transition: right 0.3s ease;
+                top: 70px; 
+                right: -250px; /* Off-screen initially */
+               /* height: 100%; */
+                transition: right 0.3s ease; 
+                justify-content: flex-start; 
+                align-items: flex-end; 
+                padding-right: 20px;
             }
 
             nav ul.active {
-                right: -10; /* 0 When active, the menu slides into view */
+                right: 0; /* Slide in from the right */
             }
 
             nav ul li {
                 width: 100%; 
+                text-align: right; /* Text aligns to the right */
             }
 
             nav ul li a {
@@ -182,8 +188,5 @@ footer {
             .header {
                 flex-wrap: wrap;
             }
-                width: 100%;
-                text-align: center;
-            }				
         }
 		
