@@ -166,7 +166,7 @@ footer {
             }
 
             nav ul.active {
-                right: 0; /* When active, the menu slides into view */
+                right: -10; /* 0 When active, the menu slides into view */
             }
 
             nav ul li {
@@ -182,7 +182,7 @@ footer {
             .header {
                 flex-wrap: wrap;
             }
-                width: 80%;
+                width: 100%;
                 text-align: center;
             }				
         }
