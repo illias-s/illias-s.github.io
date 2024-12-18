@@ -87,7 +87,7 @@ footer {
 }
 
     /* Global Reset */
-        * {
+       /* * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -154,7 +154,7 @@ footer {
             }
 
             nav ul {
-                display: none; /*flex: 0 0 auto; */
+                display: flex: 0 0 auto; 
                 flex-direction: column; 
                 width: 150px; 
                 background-color: #B64044; 
