@@ -40,13 +40,14 @@ nav {
 .menu-toggle {
     display: none;
     background-color: #B64044;
-    color: white;
+    color: yellow;
     border: none;
     padding: 10px;
     cursor: pointer;
+	
 }
 
-nav ul {
+/*nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,10 +59,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: B64044;
     text-decoration: none;
     font-weight: bold;
-}
+}*/
 
 .hero {
     /*background-color: #E3C6C4;*/	
@@ -120,24 +121,7 @@ footer {
         display: block;
     }
     
-   /*nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #B64044;
-        position: absolute;
-        top: 50px;
-        right: 20px;
-        width: 150px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        padding: 10px;
-        display: block;
-    }*/
+  
 	     nav ul {
                 display: none;
                 flex-direction: column;
