@@ -86,15 +86,18 @@ footer {
     width: 100%;
 }
 
- /* Global Reset */
+    /* Global Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-       }			  
-		
-   /* Header Styles */
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
         .header {
             display: flex;
             justify-content: space-between;
@@ -110,7 +113,18 @@ footer {
             font-weight: bold;
         }
 
-        /* Navigation Styles */
+        /* Mobile Menu Button */
+        .menu-toggle {
+            display: none;
+            background-color: #A65976;
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Desktop Menu (Horizontal) */
         nav ul {
             display: flex;
             list-style: none;
@@ -133,18 +147,7 @@ footer {
             border-radius: 5px;
         }
 
-        /* Mobile Menu Button */
-        .menu-toggle {
-            display: none;
-            background-color: #A65976;
-            color: #fff;
-            border: none;
-            font-size: 24px;
-            padding: 10px;
-            cursor: pointer;
-        }
-		
- /* Responsive Design for Mobile */
+        /* Mobile Menu Styles */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -157,21 +160,17 @@ footer {
                 background-color: #B64044; 
                 position: fixed; 
                 top: 0; 
-                right: -250px; /* Start off-screen */
+                right: -250px; /* Off-screen to the right */
                 height: 100%; 
                 transition: right 0.3s ease;
-				justify-content: flex-start; 
-                align-items: flex-end; /* This pushes items to the right */
-                padding-right: 20px;							 
             }
 
             nav ul.active {
-                right: 0; /* Slide in from the right */
+                right: 0; /* When active, the menu slides into view */
             }
 
             nav ul li {
                 width: 100%; 
-				 text-align: right; /* Text aligns to the right */												 
             }
 
             nav ul li a {
