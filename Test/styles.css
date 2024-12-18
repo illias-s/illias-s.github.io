@@ -92,6 +92,9 @@ footer {
             padding: 0;
             box-sizing: border-box;
         }
+        body {
+            font-family: Arial, sans-serif;
+        }			  
 		
    /* Header Styles */
         .header {
@@ -150,14 +153,15 @@ footer {
             }
 
             nav ul {
-                display: none; 
+                display: flex; 
                 flex-direction: column; 
-                width: 100%; 
+                width: 250px; 
                 background-color: #B64044; 
-                position: absolute; 
-                top: 60px; 
-                left: 0; 
-                z-index: 1000; 
+                position: fixed; 
+                top: 0; 
+                right: -250px; /* Start off-screen */
+                height: 100%; 
+                transition: right 0.3s ease;
             }
 
             nav ul.active {
