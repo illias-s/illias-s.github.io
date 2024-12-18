@@ -159,9 +159,9 @@ footer {
                 width: 250px; 
                 background-color: #B64044; 
                 position: fixed; 
-                top: 0; 
+                top: 60px; 
                 right: -250px; /* Off-screen to the right */
-                height: 100%; 
+                /*height: 100%; */
                 transition: right 0.3s ease;
             }
 
