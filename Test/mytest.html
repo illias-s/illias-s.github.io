@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Menu</title>
+    <title>Right-Side Mobile Menu</title>
     <style>
-        /* Basic styles for the menu */
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B64044;
+            padding: 10px 20px;
+            color: #fff;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Desktop Menu (Horizontal Menu) */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #A65976;
+            border-radius: 5px;
+        }
+
+        /* Mobile Menu Button (☰) */
         .menu-toggle {
+            display: none;
             background-color: #A65976;
             color: #fff;
             border: none;
@@ -15,31 +66,56 @@
             cursor: pointer;
         }
 
-        nav ul {
-            display: none;
-            list-style: none;
-            background-color: #B64044;
-            padding: 10px;
-        }
+        /* Mobile Menu Styles */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; 
+            }
 
-        nav ul.active {
-            display: block;
-        }
+            nav ul {
+                display: flex; 
+                flex-direction: column; 
+                width: 250px; 
+                background-color: #B64044; 
+                position: fixed; 
+                top: 0; 
+                right: -250px; /* Off-screen initially */
+                height: 100%; 
+                transition: right 0.3s ease; 
+                justify-content: flex-start; 
+                align-items: flex-end; 
+                padding-right: 20px;
+            }
 
-        nav ul li {
-            padding: 10px 0;
-        }
+            nav ul.active {
+                right: 0; /* Slide in from the right */
+            }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+            nav ul li {
+                width: 100%; 
+                text-align: right; /* Text aligns to the right */
+            }
+
+            nav ul li a {
+                display: block; 
+                padding: 15px; 
+                color: white; 
+            }
+
+            .header {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header class="header">
-        <button class="menu-toggle">☰</button>
+        <div class="logo">My Website</div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
         <!-- Navigation Menu -->
         <nav>
@@ -52,17 +128,10 @@
     </header>
 
     <script>
-        // Wait for the document to fully load
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select the button and menu
-            const toggleButton = document.querySelector('.menu-toggle');
+        function toggleMenu() {
             const menu = document.getElementById('menu');
-
-            // Attach click event to the toggle button
-            toggleButton.addEventListener('click', () => {
-                menu.classList.toggle('active');
-            });
-        });
+            menu.classList.toggle('active');
+        }
     </script>
 
 </body>
