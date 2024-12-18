@@ -87,18 +87,18 @@ footer {
 }
 
     /* Global Reset */
-        * {
+       /* * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }*/
 
-        body {
+       /* body {
             font-family: Arial, sans-serif;
-        }
+        }*/
 
         /* Header Styles */
-        .header {
+      /*  .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -106,7 +106,7 @@ footer {
             padding: 10px 20px;
             color: #fff;
             width: 100%;
-        }
+        }*/
 
         .logo {
             font-size: 24px;
