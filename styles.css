@@ -90,6 +90,7 @@ nav ul li a {
 	padding: 30px;
     margin-bottom: 20px;
 	background-size: cover;
+	background-color:#f7f7d5;
 }
 
 h1{
@@ -119,7 +120,7 @@ footer {
         display: block;
     }
     
-    nav ul {
+   /*nav ul {
         display: none;
         flex-direction: column;
         background-color: #B64044;
@@ -136,5 +137,44 @@ footer {
     nav ul li a {
         padding: 10px;
         display: block;
-    }
+    }*/
+	     nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                border: 1px solid #A65976;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin-left: 0;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .header {
+                flex-wrap: wrap;
+            }
+
+            .logo-container {
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+            }
+        }
 }
