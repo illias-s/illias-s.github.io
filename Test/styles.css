@@ -154,7 +154,7 @@ footer {
             }
 
             nav ul {
-                display: flex: 0 0 auto; 
+                display: none; /*flex: 0 0 auto; */
                 flex-direction: column; 
                 width: 150px; 
                 background-color: #B64044; 
@@ -182,5 +182,8 @@ footer {
             .header {
                 flex-wrap: wrap;
             }
+                width: 100%;
+                text-align: center;
+            }				
         }
 		
