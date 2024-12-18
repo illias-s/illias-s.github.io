@@ -92,9 +92,7 @@ footer {
             padding: 0;
             box-sizing: border-box;
         }
-        body {
-            font-family: Arial, sans-serif;
-        }			  
+       }			  
 		
    /* Header Styles */
         .header {
@@ -162,14 +160,18 @@ footer {
                 right: -250px; /* Start off-screen */
                 height: 100%; 
                 transition: right 0.3s ease;
+				justify-content: flex-start; 
+                align-items: flex-end; /* This pushes items to the right */
+                padding-right: 20px;							 
             }
 
             nav ul.active {
-                display: flex; 
+                right: 0; /* Slide in from the right */
             }
 
             nav ul li {
                 width: 100%; 
+				 text-align: right; /* Text aligns to the right */												 
             }
 
             nav ul li a {
