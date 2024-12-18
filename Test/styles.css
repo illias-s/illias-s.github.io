@@ -116,6 +116,7 @@ footer {
     width: 100%;
 }
 
+/*
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -129,7 +130,7 @@ footer {
                 background-color: #fff;
                 position: absolute;
                 top: 60px;
-                right: 50;
+                right: 0;
                 border: 1px solid #A65976;
             }
 
@@ -162,4 +163,4 @@ footer {
                 text-align: center;
             }
         }
-}
+}*/
