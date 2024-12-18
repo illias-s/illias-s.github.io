@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        /* Basic styles for the menu */
+        .menu-toggle {
+            background-color: #A65976;
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: none;
+            list-style: none;
+            background-color: #B64044;
+            padding: 10px;
+        }
+
+        nav ul.active {
+            display: block;
+        }
+
+        nav ul li {
+            padding: 10px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <button class="menu-toggle">☰</button>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // Wait for the document to fully load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the button and menu
+            const toggleButton = document.querySelector('.menu-toggle');
+            const menu = document.getElementById('menu');
+
+            // Attach click event to the toggle button
+            toggleButton.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
