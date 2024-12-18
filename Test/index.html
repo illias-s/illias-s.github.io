@@ -42,13 +42,10 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
     </script>
 </head>
 <body>
@@ -56,8 +53,9 @@
     <header><table border=0 width="100%" ><tr  ><td align=left width="7%">
         <div class="logo" >&nbsp;&nbsp;<img src="image/ziya_logo.webp" alt="Ziya Logo"  width="60"  height="60"/>&nbsp;&nbsp;</td>
 		<td width="70%"><span class="ziya" border="1">Ziya</span>&nbsp;&nbsp;Skin Clinic</div></td>
-        <td width="20%"><nav>
+        <td width="20%">
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+			<nav>
             <ul id="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
