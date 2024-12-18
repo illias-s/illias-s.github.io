@@ -125,11 +125,11 @@ footer {
 	     nav ul {
                 display: none;
                 flex-direction: column;
-                width: 80%;
+                width: 100%;
                 background-color: #fff;
                 position: absolute;
                 top: 60px;
-                right: 0;
+                right: 50;
                 border: 1px solid #A65976;
             }
 
