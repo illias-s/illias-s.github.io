@@ -1,0 +1,180 @@
+body {
+    font-family: seaside display regular;
+    margin: 0;
+    padding: 0;
+}
+
+
+	
+header {
+    background-color: #B64044;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3px;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it is on top of other elements */
+	
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+	font-family: 'Romerio';	
+}
+
+.ziya {
+	padding: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+	
+}
+
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #B64044;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    /*background-color: #E3C6C4;*/	
+	background-image: url('/image/background.avif');
+	background-size: cover; /* Fit the image inside the element */
+   /* background-size: cover; *//* Ensure the background covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Make sure the background scrolls with the page */
+   /* color: #333;*/
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 70px; /* Add margin to offset the fixed header */
+	font-family: Arial, sans-serif;
+    font-size: 15px;	
+}
+
+.content, .about-info, .contact-info,.pricing-info  {
+   /* background-color: #fff;*/
+    padding: 20px;
+    margin-top: 70px; /* Add margin to offset the fixed header */
+	background-size: cover;
+}
+
+.content-section {
+	padding: 30px;
+    margin-bottom: 20px;
+	background-size: cover;
+	background-color:#f7f7d5;
+}
+
+h1{
+	 font-family: Arial, sans-serif;
+    font-size: 20px;	
+}
+
+h2, h3, h4, h5, h6 {
+    background-color: #f0f0f0; /* Light grey background color for headings */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;	
+	display: inline-block;
+}
+
+footer {
+    background-color: #B64044;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+   /*nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #B64044;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 150px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+    }*/
+	     nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                border: 1px solid #A65976;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin-left: 0;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .header {
+                flex-wrap: wrap;
+            }
+
+            .logo-container {
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+            }
+        }
+}
