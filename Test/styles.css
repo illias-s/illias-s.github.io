@@ -87,11 +87,11 @@ footer {
 }
 
     /* Global Reset */
-       /* * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }*/
+        }
 
        /* body {
             font-family: Arial, sans-serif;
@@ -156,7 +156,7 @@ footer {
             nav ul {
                 display: flex: 0 0 auto; 
                 flex-direction: column; 
-                width: 250px; 
+                width: 150px; 
                 background-color: #B64044; 
                 position: fixed; 
                 top: 80px; 
